@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags do HTML 5</title>
+</head>
+
+<body>
+    <picture>
+        <source srcset="/Imagens/logo.png" media="(min-width: 512px)">
+        <source srcset="/Imagens/logo64.png" media="(min-width: 256px)">
+        <img src="/Imagens/logo.png" alt="Logo da Hcode">
+    </picture>
+
+    <audio src="/assets/How_it_Began.mp3" controls preload autoplay muted loop></audio>
+
+    <audio controls>
+        <source src="/assets/How_it_Began.mp3" type="audio/mpeg">
+        <source src="/assets/How_it_Began.ogg" type="audio/mpeg">
+    </audio>
+
+    <video src="/assets/AV1_trailer.mp4" width="600" controls autoplay loop muted preload
+        poster="Imagens/1260x530_1554998019.jpg">
+        <track src="/tracks/AV1_trailer_pt.vtt" label="Portugês (Brasil)" kind="subtitles" srclang="pt" default>
+        <track src="/tracks/AV1_trailer_jp.vtt" label="Japonês" kind="subtitles" srclang="jp">
+    </video>
+
+</body>
+
+</html>
