@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Html 5</title>
+    <link rel="stylesheet" href="CSS/table.css">
+</head>
+
+<body>
+    <template id="tp1">
+        <li> {{name}}</li>
+    </template>
+    <ul>
+    </ul>
+    <button type=" button">Add </button>
+    <script>
+        const btn = document.querySelector('button');
+        const template = document.querySelector('#tp1-1');
+        const ul = document.querySelector * ('ul');
+        btn.addEventListener('click', e => {
+            ul.append(template.content.cloneNode(true));
+        })
+    </script>
+    <table>
+        <caption>Esta é uma tabela</caption>
+        <colgroup span="2" style="background-color: chartreuse;"></colgroup>
+        <col span="2" style=" background-color: darkviolet;">
+        <col style="background-color: deepskyblue;">
+        <thead>
+        <tbody>
+            <tr>
+                <th sorted="reversed">Manu</th>
+                <th abbr="Jan"> Janeiro</th>
+                <th>Header 3</th>
+            </tr>
+            </thead>
+            <tr>
+                <td colspan="2"> A1</td>
+                <td> C1</td>
+            </tr>
+            <tr>
+                <td> A2</td>
+                <td rowspan="2">
+                <td> C1</td>
+            </tr>
+            <td> A3</td>
+            <td> C3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> Footer 1</td>
+                <td> Footer 2</td>
+                <td> Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
