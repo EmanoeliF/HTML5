@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML 5</title>
+</head>
+
+<body>
+    <fieldset>
+        <fieldset>
+            <legend> Endereço de Entrega</legend>
+            <input type="text" name="address" placeholder="CEP...">
+            <input type="text" name="complement" placeholder="Endereço">
+            <input type="text" name="district" placeholder="Bairro">
+            <input type="text" name="city" placeholder="Cidade">
+            <select id="Estado" name="Estado">
+                <option value="">Selecione UF</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+            <input type="text" name="contry" placeholder="País">
+            <select>
+                <optgroup label="Front-end">
+                    <option value=""> Linguagem</option>
+                    <option> Html 5</option>
+                    <option> CSS 3</option>
+                    <option> JavaScript</option>
+                </optgroup>
+                <input type="text" list="opcoes">
+                <datalist id="opcoes">
+                    <option value="">Linguagem</option>
+                    <option>PHP</option>
+                    <option>JavaScript</option>
+                    <option>Laravel</option>
+                    <option>Bootstrap</option>
+                    <option>MySQL</option>
+                </datalist>
+            </select>
+        </fieldset>
+        <dialog open>Helô HCode</dialog>
+        <textarea name="descricao" cols="30" rows="20"></textarea>
+        <form oninput="c.value= parseInt(a.value) + parseInt(b.value)">
+            <input type="range" id="a" min="0" max="10">
+            +
+            <input type="number" id="0" value="0">
+            =
+            <output name="c" for="a b">0</output>
+        </form>
+        <meter min="0" max="100" value="50" high="90" low="10" optimum="50"> 0 de 100</meter>
+        <progress max="50" value="30"></progress>
+
+</body>
+
+</html>
