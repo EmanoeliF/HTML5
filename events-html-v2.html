@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos no HTML 5</title>
+</head>
+
+<body onbeforeunload=" return debug(event)" onhashchange="debug(event)" onload="debug(event)" ononline="debug(event)">
+    onoffline="debug(event)">
+    <script>
+        function debug(e) {
+            console.log('Evento:' + e.type);
+            return ('Evento:' + e.type);
+        }
+    </script>
+    <img src="HTML5/fgsfsfsfsg.git" alt="Image" onerror="debug(Event)">
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            alert('Evento:' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>
