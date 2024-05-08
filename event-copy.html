@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: copy</title>
+    <style>
+        body {
+            height: 200vw;
+        }
+    </style>
+</head>
+
+<body>
+    <p oncopy="debug(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perspiciatis maiores
+        nesciunt laudantium, reiciendis cupiditate accusamus asperiores natus provident, aperiam excepturi rerum.
+        Quisquam, ab consequuntur temporibus quo quasi est? Débitos.</p>
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+</body>
+
+</html>
